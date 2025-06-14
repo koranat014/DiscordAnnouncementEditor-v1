@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Editor ประกาศ Discord</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        textarea { width: 100%; height: 150px; }
+        .preview { margin-top: 1em; }
+        .drop-zone {
+            width: 100%; padding: 2em; border: 2px dashed #888;
+            text-align: center; margin-top: 1em; cursor: pointer;
+        }
+        .drop-zone.dragover { background-color: #eee; }
+    </style>
+</head>
+<body>
+    <h1>แก้ไขประกาศ Discord</h1>
+    <label for="day">เลือกวัน:</label>
+    <select id="day">
+        <option>monday</option>
+        <option>tuesday</option>
+        <option>wednesday</option>
+        <option>thursday</option>
+        <option>friday</option>
+        <option>saturday</option>
+        <option>sunday</option>
+    </select>
+
+    <h3>ข้อความประกาศ:</h3>
+    <textarea id="message"></textarea>
+    <button onclick="saveMessage()">💾 บันทึกข้อความ</button>
+
+    <h3>ภาพปัจจุบัน:</h3>
+    <img id="preview" src="" width="300" />
+
+    <div class="drop-zone" id="drop-zone">ลากและวางรูปภาพใหม่ที่นี่ (.jpg)</div>
+
+    <script>
+        const daySelect = document.getElementById("day");
+        const textarea = document.getElementById("message");
+        const preview = document.getElementById("preview");
+
+        async function loadContent() {
+            const day = daySelect.value;
+            const res = await fetch(`/api/message/${day}`);
+            const text = await res.text();
+            textarea.value = text;
+            preview.src = `/uploads/${day}.jpg?${Date.now()}`;
+        }
+
+        async function saveMessage() {
+            const day = daySelect.value;
+            const res = await fetch(`/api/message/${day}`, {
+                method: 'POST',
+                body: textarea.value
+            });
+            alert(await res.text());
+        }
+
+        // โหลดเมื่อเลือกวัน
+        daySelect.addEventListener("change", loadContent);
+        window.onload = loadContent;
+
+        // Drag & Drop
+        const dropZone = document.getElementById("drop-zone");
+        dropZone.addEventListener("dragover", e => {
+            e.preventDefault();
+            dropZone.classList.add("dragover");
+        });
+
+        dropZone.addEventListener("dragleave", () => {
+            dropZone.classList.remove("dragover");
+        });
+
+        dropZone.addEventListener("drop", async e => {
+            e.preventDefault();
+            dropZone.classList.remove("dragover");
+
+            const file = e.dataTransfer.files[0];
+            const day = daySelect.value;
+            const formData = new FormData();
+            formData.append("file", file);
+
+            const res = await fetch(`/api/image/${day}`, {
+                method: 'POST',
+                body: formData
+            });
+            alert(await res.text());
+            loadContent();
+        });
+    </script>
+</body>
+</html>

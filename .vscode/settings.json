@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net9.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/37b4cf1a-81c5-44ff-bff4-64d778311d00/resourceGroups/demo/providers/Microsoft.Web/sites/bot-discord-demo"
+}

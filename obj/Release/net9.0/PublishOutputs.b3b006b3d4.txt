@@ -1,0 +1,7 @@
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Release\net9.0\publish\DiscordAnnouncementEditor-v1.exe
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Release\net9.0\publish\appsettings.Development.json
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Release\net9.0\publish\appsettings.json
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Release\net9.0\publish\DiscordAnnouncementEditor-v1.dll
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Release\net9.0\publish\DiscordAnnouncementEditor-v1.deps.json
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Release\net9.0\publish\DiscordAnnouncementEditor-v1.runtimeconfig.json
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Release\net9.0\publish\DiscordAnnouncementEditor-v1.pdb

@@ -1,0 +1,2 @@
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Debug\net9.0\DiscordAnnouncementEditor-v1.exe
+C:\Users\antic\Data-Koranat\Dev\DiscordAnnouncementEditor-v1\bin\Debug\net9.0\DiscordAnnouncementEditor-v1.dll
