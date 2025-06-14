@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antic\\Data-Koranat\\Dev\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj": {}
+    "C:\\Users\\antic\\Documents\\GitHub\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antic\\Data-Koranat\\Dev\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj": {
+    "C:\\Users\\antic\\Documents\\GitHub\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antic\\Data-Koranat\\Dev\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj",
+        "projectUniqueName": "C:\\Users\\antic\\Documents\\GitHub\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj",
         "projectName": "DiscordAnnouncementEditor-v1",
-        "projectPath": "C:\\Users\\antic\\Data-Koranat\\Dev\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj",
+        "projectPath": "C:\\Users\\antic\\Documents\\GitHub\\DiscordAnnouncementEditor-v1\\DiscordAnnouncementEditor-v1.csproj",
         "packagesPath": "C:\\Users\\antic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antic\\Data-Koranat\\Dev\\DiscordAnnouncementEditor-v1\\obj\\",
+        "outputPath": "C:\\Users\\antic\\Documents\\GitHub\\DiscordAnnouncementEditor-v1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\antic\\AppData\\Roaming\\NuGet\\NuGet.Config"
